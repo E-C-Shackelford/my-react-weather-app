@@ -16,7 +16,7 @@ export default function Search() {
       />
 
       <button>Search</button>
-      <button id="current-location-button">Current Location</button>
+      <button>Current Location</button>
     </div>
   );
 }
