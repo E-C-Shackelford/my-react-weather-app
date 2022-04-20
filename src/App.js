@@ -6,6 +6,8 @@ import Condition from "./Condition";
 import ConditionIcon from "./ConditionIcon";
 import WindIcon from "./WindIcon";
 import Wind from "./Wind";
+import Search from "./Search";
+import Footer from "./Footer";
 
 import "./App.css";
 

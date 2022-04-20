@@ -9,11 +9,11 @@ export default function Temperature() {
         <span id="temp-current">9</span>
         <sup>
           <span class="scale degrees">
-            <a href="#" class="scale degrees" id="celsius-link">
+            <a href="/" class="scale degrees" id="celsius-link">
               °C
             </a>
             |
-            <a href="#" class="scale degrees" id="fahrenheit-link">
+            <a href="/" class="scale degrees" id="fahrenheit-link">
               °F
             </a>
           </span>
