@@ -5,9 +5,7 @@ import "./Condition.css";
 export default function Condition() {
   return (
     <div className="Condition">
-      <div class="weather-descriptor" id="description">
-        Clouds
-      </div>
+      <div className="weather-descriptor">Clouds</div>
     </div>
   );
 }

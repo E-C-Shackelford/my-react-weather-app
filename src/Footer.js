@@ -5,10 +5,10 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <div className="Footer">
-      <div class="footer-style">
+      <div className="footer-style">
         {" "}
         <a
-          class="built-style"
+          className="built-style"
           href="https://github.com/E-C-Shackelford/my-react-weather-app"
         >
           Built

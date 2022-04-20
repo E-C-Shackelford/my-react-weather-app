@@ -7,7 +7,7 @@ export default function Search() {
     <div className="Search">
       <input
         id="searchCity-input"
-        class="search-bar"
+        className="search-bar"
         type="City"
         placeholder="Search city"
         autofocus="on"

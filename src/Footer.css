@@ -15,7 +15,7 @@ div.footer-style {
   text-align: center;
   transition: all 200ms ease-in-out;
 }
-a:hover {
+.Footer a:hover {
   color: white;
   cursor: pointer;
 }
