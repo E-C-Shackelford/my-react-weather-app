@@ -9,7 +9,7 @@ export default function Footer() {
         {" "}
         <a
           class="built-style"
-          href="https://github.com/E-C-Shackelford/my-weather-app"
+          href="https://github.com/E-C-Shackelford/my-react-weather-app"
         >
           Built
         </a>{" "}
