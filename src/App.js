@@ -6,6 +6,7 @@ import ConditionIcon from "./ConditionIcon";
 import WindIcon from "./WindIcon";
 import Wind from "./Wind";
 import Search from "./Search";
+import DailyForecast from "./DailyForecast";
 import Footer from "./Footer";
 
 import "./App.css";
@@ -27,6 +28,7 @@ function App() {
                 <Wind />
               </div>
               <Search />
+              <DailyForecast />
               <Footer />
             </div>
           </div>
