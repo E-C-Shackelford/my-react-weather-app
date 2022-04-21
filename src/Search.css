@@ -3,6 +3,7 @@
   border-radius: 20px;
   color: #18a0f4;
   font-family: "Montserrat", sans-serif;
+  font-weight: 550;
   margin-top: 20px;
   margin-right: 5px;
   padding: 10px 15px;
@@ -14,6 +15,7 @@
   border-radius: 20px;
   color: #18a0f4;
   font-family: "Montserrat", sans-serif;
+  font-weight: 550;
   margin-top: 10px;
   padding: 10px 15px;
   transition: all 200ms ease-in-out;
