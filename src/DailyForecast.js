@@ -1,12 +1,14 @@
 import React from "react";
 
+import "./DailyForecast.css";
+
 export default function DailyForecast() {
   return (
     <div className="DailyForecast">
       <div className="container daily-forecast" id="forecast">
         <div className="row align-items-start">
-          <div className="col-3">
-            <div className="day">Today</div>
+          <div className="col">
+            <div className="day">Wed</div>
             <div className="weather-icon">
               <img
                 src="http://openweathermap.org/img/wn/10d@2x.png"
@@ -15,12 +17,12 @@ export default function DailyForecast() {
               />
             </div>
             <div>
-              <span className="temps">59°</span>{" "}
-              <span className="lowest-temp">50°</span>
+              <span className="temps">13°</span>{" "}
+              <span className="lowest-temp">7°</span>
             </div>
           </div>
-          <div className="col-3">
-            <div className="day">Wed</div>
+          <div className="col">
+            <div className="day">Thu</div>
             <div className="weather-icon">
               <img
                 src="http://openweathermap.org/img/wn/10d@2x.png"
@@ -29,12 +31,12 @@ export default function DailyForecast() {
               />
             </div>
             <div>
-              <span className="temps">53°</span>{" "}
-              <span className="lowest-temp">47°</span>
+              <span className="temps">16°</span>{" "}
+              <span className="lowest-temp">5°</span>
             </div>
           </div>
-          <div className="col-3">
-            <div className="day">Thu</div>
+          <div className="col">
+            <div className="day">Fri</div>
             <div className="weather-icon">
               <img
                 src="http://openweathermap.org/img/wn/03d@2x.png"
@@ -43,12 +45,12 @@ export default function DailyForecast() {
               />
             </div>
             <div>
-              <span className="temps">50°</span>{" "}
-              <span className="lowest-temp">40°</span>
+              <span className="temps">18°</span>{" "}
+              <span className="lowest-temp">5°</span>
             </div>
           </div>
-          <div className="col-3">
-            <div className="day">Fri</div>
+          <div className="col">
+            <div className="day">Sat</div>
             <div className="weather-icon">
               <img
                 src="http://openweathermap.org/img/wn/02d@2x.png"
@@ -57,8 +59,8 @@ export default function DailyForecast() {
               />
             </div>
             <div>
-              <span className="temps">53°</span>{" "}
-              <span className="lowest-temp">40°</span>
+              <span className="temps">19°</span>{" "}
+              <span className="lowest-temp">7°</span>
             </div>
           </div>
         </div>
