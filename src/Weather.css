@@ -18,17 +18,17 @@
   padding-bottom: 0;
   text-align: left;
 }
-.scale {
+.Weather .scale {
   color: white;
 }
-.scale:hover {
+.Weather .scale:hover {
   color: white;
 }
-.degrees {
+.Weather .degrees {
   font-size: 20px;
   text-decoration: none;
 }
-.weather-descriptor {
+.Weather .weather-descriptor {
   color: white;
   font-size: 31px;
   font-weight: normal;
@@ -36,18 +36,18 @@
   padding-top: 10px;
   text-align: left;
 }
-.icon-position {
+.Weather .icon-position {
   margin-top: 0;
   margin-bottom: 5px;
   padding-left: 0;
 }
-.wind-speed-icon {
+.Weather .wind-speed-icon {
   font-size: 30px;
   color: white;
   margin-top: 2px;
   padding-top: 18px;
 }
-.wind-position {
+.Weather .wind-position {
   color: white;
   font-size: 31px;
   font-weight: normal;
@@ -55,7 +55,7 @@
   padding-top: 8px;
   padding-left: 4px;
 }
-.search-bar {
+.Weather .search-bar {
   border: 1px solid #18a0f4;
   border-radius: 20px;
   color: #18a0f4;
@@ -78,25 +78,25 @@
   padding: 10px 15px;
   transition: all 200ms ease-in-out;
 }
-button:hover {
+.Weather button:hover {
   background: #18a0f4;
   border: 2px solid white;
   color: white;
   cursor: pointer;
 }
-.weather-conditions {
+.Weather .weather-conditions {
   display: flex;
   overflow: hidden;
   margin-top: 5;
   margin-bottom: 5;
 }
-.lowest-temp {
+.Weather .lowest-temp {
   color: #5ad2fe;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: lighter;
 }
-.daily-forecast {
+.Weather .daily-forecast {
   background: white;
   border: 2px solid #18a0f4;
   border-radius: 20px;
@@ -109,7 +109,7 @@ button:hover {
   max-width: 100%;
   text-align: center;
 }
-.col:hover {
+.Weather .col:hover {
   background: #4b95e1;
   border-radius: 20px;
   color: white;
@@ -118,17 +118,17 @@ button:hover {
   margin-right: 15px;
   transition: all 200ms ease-in-out;
 }
-.day {
+.Weather .day {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: bold;
 }
-.temps {
+.Weather .temps {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: bold;
 }
-div.footer-style {
+.Weather div.footer-style {
   color: #18a0f4;
   font-family: "Montserrat", sans-serif;
   font-size: 17px;
@@ -136,7 +136,7 @@ div.footer-style {
   padding-top: 13px;
   text-align: center;
 }
-.built-style {
+.Weather .built-style {
   color: #18a0f4;
   font-size: 17px;
   font-weight: bold;
