@@ -17,8 +17,9 @@ export default function WeatherDetails(props) {
           {props.data.condition}
         </div>
         <div className="weather-icon weather-icon-main" id="icon-position">
-          <img src={props.data.icon} id="icon" />
+          <img src={props.data.iconUrl} id="icon" />
         </div>
+
         <div className="wind-speed-icon">
           <i className="fa-solid fa-wind weather-icon-main" id="wind-icon"></i>
         </div>
