@@ -13,7 +13,7 @@ export default function WeatherDetails(props) {
         <WeatherTemperature celsius={props.data.temperature} />
       </h3>
       <div className="weather-conditions">
-        <div className="weather-descriptor" id="description">
+        <div className="text-capitalize weather-descriptor" id="description">
           {props.data.condition}
         </div>
         <div className="weather-icon weather-icon-main" id="icon-position">
