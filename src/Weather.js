@@ -38,92 +38,95 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="Weather">
-        <WeatherDetails data={weatherData} />
+        <div className="container">
+          <div className="container main">
+            <WeatherDetails data={weatherData} />
+            <form id="searchCity-form" onSubmit={handleSubmit}>
+              <input
+                id="searchCity-input"
+                className="search-bar"
+                type="City"
+                placeholder="Search city"
+                autofocus="on"
+                autocomplete="off"
+                onfocus="this.value=''"
+                onChange={handleCityChange}
+              />
 
-        <input
-          onSubmit={handleSubmit}
-          id="searchCity-input"
-          className="search-bar"
-          type="City"
-          placeholder="Search city"
-          autofocus="on"
-          autocomplete="off"
-          onfocus="this.value=''"
-          onChange={handleCityChange}
-        />
-
-        <button>Search</button>
-        <button id="current-location-button">Current Location</button>
-
-        <div className="container daily-forecast" id="forecast">
-          <div className="row align-items-start">
-            <div className="col">
-              <div className="day">Wed</div>
-              <div className="weather-icon">
-                <img
-                  src="http://openweathermap.org/img/wn/10d@2x.png"
-                  alt="Clear"
-                  id="icon"
-                />
-              </div>
-              <div>
-                <span className="temps">59°</span>{" "}
-                <span class="lowest-temp">50°</span>
+              <button>Search</button>
+              <button id="current-location-button">Current Location</button>
+            </form>
+            <div className="container daily-forecast" id="forecast">
+              <div className="row align-items-start">
+                <div className="col">
+                  <div className="day">Wed</div>
+                  <div className="weather-icon">
+                    <img
+                      src="http://openweathermap.org/img/wn/10d@2x.png"
+                      alt="Clear"
+                      id="icon"
+                    />
+                  </div>
+                  <div>
+                    <span className="temps">59°</span>{" "}
+                    <span class="lowest-temp">50°</span>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="day">Thu</div>
+                  <div className="weather-icon">
+                    <img
+                      src="http://openweathermap.org/img/wn/10d@2x.png"
+                      alt="Clouds"
+                      id="icon"
+                    />
+                  </div>
+                  <div>
+                    <span className="temps">53°</span>{" "}
+                    <span class="lowest-temp">47°</span>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="day">Fri</div>
+                  <div className="weather-icon">
+                    <img
+                      src="http://openweathermap.org/img/wn/03d@2x.png"
+                      alt="Clear"
+                      id="icon"
+                    />
+                  </div>
+                  <div>
+                    <span className="temps">50°</span>{" "}
+                    <span class="lowest-temp">40°</span>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="day">Sat</div>
+                  <div className="weather-icon">
+                    <img
+                      src="http://openweathermap.org/img/wn/02d@2x.png"
+                      alt="Clear"
+                      id="icon"
+                    />
+                  </div>
+                  <div>
+                    <span className="temps">53°</span>{" "}
+                    <span class="lowest-temp">40°</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="col">
-              <div className="day">Thu</div>
-              <div className="weather-icon">
-                <img
-                  src="http://openweathermap.org/img/wn/10d@2x.png"
-                  alt="Clouds"
-                  id="icon"
-                />
-              </div>
-              <div>
-                <span className="temps">53°</span>{" "}
-                <span class="lowest-temp">47°</span>
-              </div>
-            </div>
-            <div className="col">
-              <div className="day">Fri</div>
-              <div className="weather-icon">
-                <img
-                  src="http://openweathermap.org/img/wn/03d@2x.png"
-                  alt="Clear"
-                  id="icon"
-                />
-              </div>
-              <div>
-                <span className="temps">50°</span>{" "}
-                <span class="lowest-temp">40°</span>
-              </div>
-            </div>
-            <div className="col">
-              <div className="day">Sat</div>
-              <div className="weather-icon">
-                <img
-                  src="http://openweathermap.org/img/wn/02d@2x.png"
-                  alt="Clear"
-                  id="icon"
-                />
-              </div>
-              <div>
-                <span className="temps">53°</span>{" "}
-                <span class="lowest-temp">40°</span>
-              </div>
+            <div className="footer-style">
+              {" "}
+              <a
+                className="built-style"
+                href="https://github.com/E-C-Shackelford/my-react-weather-app"
+              >
+                Built
+              </a>{" "}
+              by Elizabeth Shackelford
             </div>
           </div>
-        </div>
-        <div className="footer-style">
-          {" "}
-          <a
-            className="built-style"
-            href="https://github.com/E-C-Shackelford/my-react-weather-app"
-          >
-            Built
-          </a>{" "}
-          by Elizabeth Shackelford
         </div>
       </div>
     );
