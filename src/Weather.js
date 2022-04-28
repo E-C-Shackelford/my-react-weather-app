@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 
 import "./Weather.css";
 
@@ -26,7 +27,7 @@ export default function Weather(props) {
           <div className="container">
             <div className="container main">
               <h1 id="city">{weatherData.city}</h1>
-              <h2>{weatherData.date}</h2>
+              <h2><FormattedDate date={weatherData.date}</h2>
               <h3 className="temp">
                 <span id="temp-current">
                   {Math.round(weatherData.temperature)}
