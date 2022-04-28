@@ -16,6 +16,7 @@ export default function Weather(props) {
       temperature: response.data.main.temp,
       condition: response.data.weather[0].description,
       iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       wind: response.data.wind.speed,
     });
   }
@@ -54,7 +55,6 @@ export default function Weather(props) {
               />
 
               <button>Search</button>
-              <button id="current-location-button">Current Location</button>
             </form>
             <div className="container daily-forecast" id="forecast">
               <div className="row align-items-start">
