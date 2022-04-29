@@ -48,8 +48,8 @@ export default function Weather(props) {
                 className="search-bar"
                 type="search"
                 placeholder="Search city"
-                autofocus="on"
-                autocomplete="off"
+                //autofocus="on"
+                //autocomplete="off"
                 onChange={handleCityChange}
                 //onfocus="this.value=''"
               />
