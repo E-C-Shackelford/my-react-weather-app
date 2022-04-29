@@ -51,7 +51,7 @@ export default function Weather(props) {
                 autofocus="on"
                 autocomplete="off"
                 onChange={handleCityChange}
-                onfocus="this.value=''"
+                //onfocus="this.value=''"
               />
 
               <button>Search</button>
