@@ -8,7 +8,7 @@ export default function WeatherForecast(props) {
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState(null);
 
-  // if coordinates change, set loaded to false so API code inside else is rendered
+  // if coordinates change, set loaded to false triggered, so state is changed to false, and API call is made with new coordinates
   useEffect(() => {
     setLoaded(false);
   }, [props.coordinates]);
@@ -26,6 +26,7 @@ export default function WeatherForecast(props) {
     axios.get(apiUrl).then(handleResponse);
   }
 
+  // loop through an array of forecast one item at a time and send to WeatherForecastDay component, which will render forecast for the given day
   if (loaded) {
     return (
       <div className="WeatherForecast">
