@@ -17,6 +17,7 @@ export default function Weather(props) {
       condition: response.data.weather[0].description,
       iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       wind: response.data.wind.speed,
+      coordinates: response.data.coordinates,
     });
   }
 
@@ -56,7 +57,7 @@ export default function Weather(props) {
               <button>Search</button>
             </form>
             <div className="container daily-forecast" id="forecast">
-              <WeatherForecast />
+              <WeatherForecast coordinates={weatherData.coordinates} />
             </div>
 
             <div className="footer-style">
@@ -64,6 +65,8 @@ export default function Weather(props) {
               <a
                 className="built-style"
                 href="https://github.com/E-C-Shackelford/my-react-weather-app"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Built
               </a>{" "}
