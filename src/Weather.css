@@ -84,6 +84,50 @@
   color: white;
   cursor: pointer;
 }
+.Weather .weather-conditions {
+  display: flex;
+  overflow: hidden;
+  margin-top: 5;
+  margin-bottom: 5;
+}
+.Weather .lowest-temp {
+  color: #5ad2fe;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+}
+.Weather .daily-forecast {
+  background: white;
+  border: 2px solid #18a0f4;
+  border-radius: 20px;
+  color: #18a0f4;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  height: 185px;
+  padding: 10px;
+  margin: 40px auto 20px auto;
+  max-width: 100%;
+  text-align: center;
+}
+.Weather .col:hover {
+  background: #4b95e1;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-right: 15px;
+  transition: all 200ms ease-in-out;
+}
+.Weather .day {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.Weather .temps {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
 
 .Weather div.footer-style {
   color: #18a0f4;

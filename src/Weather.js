@@ -48,18 +48,16 @@ export default function Weather(props) {
                 className="search-bar"
                 type="search"
                 placeholder="Search city"
-                //autofocus="on"
-                //autocomplete="off"
+                autoFocus="on"
+                autoComplete="off"
                 onChange={handleCityChange}
-                //onfocus="this.value=''"
+                onFocus={(event) => (event.target.value = "")}
               />
 
               <button>Search</button>
             </form>
             <div className="container daily-forecast" id="forecast">
-              <div className="row align-items-start">
-                <WeatherForecast coordinates={weatherData.coordinates} />
-              </div>
+              <WeatherForecast coordinates={weatherData.coordinates} />
             </div>
 
             <div className="footer-style">
