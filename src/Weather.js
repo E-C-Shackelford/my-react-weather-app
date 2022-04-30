@@ -17,7 +17,7 @@ export default function Weather(props) {
       condition: response.data.weather[0].description,
       iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       wind: response.data.wind.speed,
-      coordinates: response.data.coordinates,
+      coordinates: response.data.coord,
     });
   }
 
@@ -57,7 +57,9 @@ export default function Weather(props) {
               <button>Search</button>
             </form>
             <div className="container daily-forecast" id="forecast">
-              <WeatherForecast coordinates={weatherData.coordinates} />
+              <div className="row align-items-start">
+                <WeatherForecast coordinates={weatherData.coordinates} />
+              </div>
             </div>
 
             <div className="footer-style">
